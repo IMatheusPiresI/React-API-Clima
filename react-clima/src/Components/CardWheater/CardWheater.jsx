@@ -1,15 +1,21 @@
 import React from "react";
-import { Card, CityName, ImageWheater, Description, BoxInfo } from "./CardWheaterStyle";
+import Forest from "../Forest/Forest";
+import { Card, CityName, ImageWheater, Description, BoxInfo, IconDescription, CurrentTemp, BoxForest } from "./CardWheaterStyle";
 
-function CardWheater({ city, country, img, description }){
+function CardWheater({ city, country, img, description, temp, maxTemp, minTemp, forest }){
     return(
         <Card id="card">
             <CityName>{city} / {country}</CityName>
-            <ImageWheater src={img} alt="FotoTempo" />
-            <Description>{description}</Description>
             <BoxInfo>
-
+                <IconDescription>
+                    <ImageWheater src={img} alt="FotoTempo"/>
+                    <Description>{description}</Description>
+                </IconDescription>
+                <CurrentTemp>{temp}°C</CurrentTemp>
             </BoxInfo>
+            <BoxForest>
+                <Forest/>
+            </BoxForest>
         </Card>
     )
 }

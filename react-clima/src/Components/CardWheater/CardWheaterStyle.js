@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 
 export const CityName = styled.p`
-    font-size: 25px;
+    font-size: 40px;
     color: #fff;
     text-shadow: 2px 1px #000;
     margin-bottom: 0px;
 `;
 
 export const ImageWheater = styled.img`
-    width:75px;
+    width:65px;
     height: auto;
 `;
 
@@ -27,9 +27,33 @@ export const Description = styled.p`
     color: #fff;
     font-size: 14px;
     position: relative;
+    text-shadow: 1px 1px #000;
     top: -15px;
 `;
 
 export const BoxInfo = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+`;
 
+export const IconDescription = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const Temp = styled.div`
+    display: block;
+`;
+
+export const CurrentTemp = styled.p`
+    font-size: 45px;
+    text-shadow: 1px 1px #000;
+    color: #fff;
+`;
+
+export const BoxForest = styled.div`
+    display: flex;
 `;

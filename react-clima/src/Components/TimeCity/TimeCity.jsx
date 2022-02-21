@@ -2,7 +2,8 @@ import React from "react";
 import { ContainerCity, BoxCity } from "./TimeCityStyle";
 import CardWheater from "../CardWheater/CardWheater";
 
-function TempoCity({ city , country, img, description}){
+function TempoCity({ city , country, img, description, temp}){
+    
     return(
         <ContainerCity id="city-wheater">
             <BoxCity>
@@ -11,6 +12,7 @@ function TempoCity({ city , country, img, description}){
                 country={country}
                 img={img}
                 description={description}
+                temp={temp}
                />
             </BoxCity>
         </ContainerCity>
