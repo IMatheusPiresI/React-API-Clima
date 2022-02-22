@@ -14,13 +14,17 @@ export const ImageWheater = styled.img`
 `;
 
 export const Card = styled.div`
-    width: 500px;
+    width: 550px;
     height: auto;
     padding: 2em 1em;
     background-color: #6495ED;
-    box-shadow: 0px 0px 15px 1px #000;
+    box-shadow: 0px 0px 15px 1px #0000FF;
     border: 1px solid #0000FF;
     border-radius: 15px;
+
+    @media (max-width: 580px) {
+        width: 400px;
+    }
 `;
 
 export const Description = styled.p`
@@ -42,6 +46,7 @@ export const BoxInfo = styled.div`
 export const IconDescription = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
 `;
 
 export const Temp = styled.div`
@@ -56,4 +61,31 @@ export const CurrentTemp = styled.p`
 
 export const BoxForest = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+
+    @media (max-width: 580px) {
+        overflow-x: scroll;
+        justify-content: space-between;
+        padding: 5px;
+
+       /* width */
+        ::-webkit-scrollbar {
+        width: 20px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #0000FF; 
+        border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #4169E1; 
+        border-radius: 10px;
+        }
+    }
 `;

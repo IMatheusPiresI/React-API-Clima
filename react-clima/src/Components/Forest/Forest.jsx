@@ -1,11 +1,22 @@
 import React from "react";
-import { BoxForest } from "./ForestStyle";
+import { ContainerForest, ForestDay, ForestIcon, BoxTempMaxMin, ForestMaxTemp, ForestMinTemp, DescripForest } from "./ForestStyle";
 
-function Forest(){
+function Forest({ day, forestIcon, maxTemp, minTemp, description }){
+
+    let date = new Date(day*1000)
+    date = date.getDay()
+    const dias = ['Dom', 'Seg', 'Ter', 'Qua', 'Quin', 'Sex','Sáb']
+
     return(
-        <BoxForest>
-
-        </BoxForest>
+        <ContainerForest>
+            <ForestDay>{dias[date]}</ForestDay>
+            <ForestIcon src={forestIcon}/>
+            <DescripForest>{description}</DescripForest>
+            <BoxTempMaxMin>
+                <ForestMaxTemp>{maxTemp}°C</ForestMaxTemp>
+                <ForestMinTemp>{minTemp}°C</ForestMinTemp>
+            </BoxTempMaxMin>
+        </ContainerForest>
     )
 }
 

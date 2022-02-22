@@ -4,7 +4,23 @@ export const ContainerBsb = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 400px;
+
+    .animationbsb{
+        animation: CardBsb 1.8s ease-in-out forwards;
+    }
+
+
+    @keyframes CardBsb {
+        0%,50%{
+            opacity: 0;
+            transform: translateX(-35px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
 `;
 
 export const BoxBsb = styled.div`
@@ -13,4 +29,6 @@ export const BoxBsb = styled.div`
     justify-content: center;
     align-items: center;
     padding: 2em;
+    text-align: center;
+    opacity: 0;
 `;
