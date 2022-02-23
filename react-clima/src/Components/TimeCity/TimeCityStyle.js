@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContainerCity = styled.div`
     width: 100%;
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 `;

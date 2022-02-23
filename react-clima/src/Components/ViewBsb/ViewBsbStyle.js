@@ -26,9 +26,15 @@ export const ContainerBsb = styled.div`
 export const BoxBsb = styled.div`
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2em;
     text-align: center;
     opacity: 0;
+`;
+
+export const ContainerApiBSb = styled.div`
+    width: 100%;
+    height: 100%;
 `;

@@ -5,6 +5,22 @@
 }
 
 html,body{
-  width: 100%;
-  min-height: 100vh;
+  height: 100%;
+}
+
+body{
+  background-image: url('Images/bsb.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo{
+  flex: 1 0 auto;
+}
+
+.rodape{
+  flex-shrink: 0;
 }

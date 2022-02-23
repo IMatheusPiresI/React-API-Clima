@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { BoxBsb, ContainerBsb } from './CardBsbStyle'
+import { ContainerApiBSb, BoxBsb, ContainerBsb } from './ViewBsbStyle'
 import CardWheater from "../CardWheater/CardWheater";
 import apiBsb from "../../api/apiBsb";
 import apiForest from "../../api/apiForest";
+import InfoBsb from "../InfoBsb/InfoBsb";
 
-function CardBsb(){
+function ViewBsb(){
     const [city, setCity] = useState('')
     const [country, setCountry] = useState('')
     const [temp,setTemp] = useState('')
     const [img, setImg] = useState('')
     const [description, setDescription] = useState('')
     const [forest, setForest] = useState([])
+    const [humidityProgress, setHumidityProgress] = useState(0)
 
     useEffect(( ) =>{
         async function wheaterBsb(){
@@ -21,6 +23,8 @@ function CardBsb(){
                 setTemp(response.main.temp.toFixed(0))
                 setImg(`http://openweathermap.org/img/wn/${response.weather[0].icon}.png`)
                 setDescription(response.weather[0].description)
+                
+                setHumidityProgress(response.main.humidity)
                async function forestBsb(){
                     apiForest(response).get().then(res=>{
                         const forest = res.data
@@ -35,19 +39,25 @@ function CardBsb(){
     }, [])
 
     return(
-       <ContainerBsb id="cardbsb">
-           <BoxBsb id="boxbsb">
+       <ContainerApiBSb id="cardbsb">
+           <ContainerBsb>
+                <BoxBsb id="boxbsb">
                 <CardWheater
-                    city={city}
-                    country = {country}
-                    temp={temp}
-                    img = {img}
-                    forest={forest}
-                    description={description}
-                />
-            </BoxBsb>
-       </ContainerBsb>
+                        city={city}
+                        country = {country}
+                        temp={temp}
+                        img = {img}
+                        forest={forest}
+                        description={description}
+                    />
+                </BoxBsb>
+            </ContainerBsb>
+
+            <InfoBsb
+                humidity={humidityProgress}
+            />
+       </ContainerApiBSb>
     )
 }
 
-export default CardBsb;
+export default ViewBsb;
