@@ -15,4 +15,6 @@ export const InfoCity = styled.div`
     border: 1px solid #0000FF;
     border-radius: 15px;
     background-color: #6495ED;
+    display: flex;
+    justify-content: space-around;
 `;

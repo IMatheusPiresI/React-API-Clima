@@ -4,7 +4,7 @@ export const ContainerBsb = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: auto;
 
     .animationbsb{
         animation: CardBsb 1.8s ease-in-out forwards;
@@ -30,6 +30,7 @@ export const BoxBsb = styled.div`
     justify-content: center;
     align-items: center;
     padding: 2em;
+    gap: 4em;
     text-align: center;
     opacity: 0;
 `;

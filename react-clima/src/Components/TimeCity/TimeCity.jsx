@@ -18,7 +18,6 @@ function TimeCity({ humidity ,city , country, img, description, temp, day, fores
                 forest = {forest}
                />
             </BoxCity>
-
            <InfoCitys
                 humidity={humidity}
            />

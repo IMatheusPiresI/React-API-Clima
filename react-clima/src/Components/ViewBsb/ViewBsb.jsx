@@ -42,20 +42,20 @@ function ViewBsb(){
        <ContainerApiBSb id="cardbsb">
            <ContainerBsb>
                 <BoxBsb id="boxbsb">
-                <CardWheater
-                        city={city}
-                        country = {country}
-                        temp={temp}
-                        img = {img}
-                        forest={forest}
-                        description={description}
+                    <CardWheater
+                            city={city}
+                            country = {country}
+                            temp={temp}
+                            img = {img}
+                            forest={forest}
+                            description={description}
+                        />
+                    <InfoBsb
+                        humidity={humidityProgress}
                     />
                 </BoxBsb>
+                
             </ContainerBsb>
-
-            <InfoBsb
-                humidity={humidityProgress}
-            />
        </ContainerApiBSb>
     )
 }

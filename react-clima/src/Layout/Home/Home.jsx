@@ -6,6 +6,7 @@ import carregando from '../../Images/loading.gif'
 import apiForest from "../../api/apiForest";
 import apiWheaterCity from '../../api/apiWheaterCity'
 import Footer from "../../Components/Footer/Footer";
+import { ContainerFooter } from "../../Components/Footer/FooterStyle";
 
 function Home(){
 
@@ -87,9 +88,9 @@ function Home(){
                     erro={erro}
                 />
             </ContainerBody>
-            <div className="rodape">
+            <ContainerFooter className="rodape">
                     <Footer/>
-            </div>
+            </ContainerFooter>
         </div>
         
     )

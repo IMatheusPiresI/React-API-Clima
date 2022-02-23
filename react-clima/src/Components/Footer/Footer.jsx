@@ -4,7 +4,9 @@ import { ContainerFooter, TitleFooter } from "./FooterStyle";
 function Footer(){
     return(
         <ContainerFooter>
-            <TitleFooter>Capital clima</TitleFooter>
+            <TitleFooter>&copy; 2022</TitleFooter>
+            <TitleFooter>Capital Clima</TitleFooter>
+            <TitleFooter>MPS</TitleFooter>
         </ContainerFooter>
     )
 }

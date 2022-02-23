@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const ContainerHeader = styled.header`
     width: 100%;
+    margin-bottom: 1em;
 `;
 
 export const Nav = styled.nav`

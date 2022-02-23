@@ -13,6 +13,10 @@ export const BoxCity = styled.div`
     align-items: center;
     justify-content: center;
     width: 90%;
-    padding: 2em ;
+    padding: 2em 2em 4em 2em;
     text-align: center;
+`;
+
+export const ContainerTimeCity = styled.div`
+    
 `;
