@@ -4,7 +4,7 @@ import error from '../../Images/error.gif'
 
 function CardErro(){
     return(
-        <ContainerErro>
+        <ContainerErro className="animationCard">
              <CardError id="card-error">
                 <ErroImage src={error} alt='Error'/>
                 <ErroMessage>Cidade não Encontrada</ErroMessage>

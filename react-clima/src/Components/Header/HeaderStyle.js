@@ -15,10 +15,8 @@ export const Nav = styled.nav`
 `;
 
 export const Image = styled.img`
-    position: absolute;
-    left: 20px;
-    width: 65px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
 `;
 
 export const BuscaCity = styled.input`
@@ -33,4 +31,18 @@ export const BuscaCity = styled.input`
     &::placeholder{
         color: #fff;
     }
+`;
+
+export const BoxLogo = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+`;
+
+export const NameSite = styled.h4`
+    color: #FFF;
+    text-shadow: 1px 1px #000;
+    font-size: 25px;
 `;
