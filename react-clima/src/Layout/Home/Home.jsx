@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ContainerBody } from "./HomeStyle";
+import { ContainerBody, Body } from "./HomeStyle";
 import Header from "../../Components/Header/Header";
 import BoxCards from "../../Components/BoxCards/BoxCards";
 import carregando from '../../Images/loading.gif'
@@ -21,6 +21,10 @@ function Home(){
     const [minTemp, setMinTemp] = useState(0)
     const [forest, setForest] = useState([])
     const [humidity, setHumidity] = useState(0)
+    const [clouds, setClouds] = useState(0)
+    const [wind, setWind] = useState(0)
+    const [sunset, setSunset] = useState(0)
+    const [sunrise, setSunrise] = useState(0)
 
     useEffect( () => {
       document.querySelector('#city').addEventListener('keypress', (e)=>{
@@ -50,6 +54,10 @@ function Home(){
                     setCity(response.name)
                     setCountry(response.sys.country)
                     setDescription(response.weather[0].description)
+                    setClouds(response.clouds.all)
+                    setWind(Math.floor(response.wind.speed))
+                    setSunset(response.sys.sunset)
+                    setSunrise(response.sys.sunrise)
                     async function forestWheater(){
                         await apiForest(response).get().then(res => {
                             const resp = res.data
@@ -77,7 +85,7 @@ function Home(){
     }, [])
 
     return(
-        <div className="body">
+        <Body className="body">
             <ContainerBody>
                 <Header />
                 <BoxCards
@@ -91,12 +99,16 @@ function Home(){
                     humidity={humidity}
                     loading={loading}
                     erro={erro}
+                    clouds={clouds}
+                    wind={wind}
+                    sunset={sunset}
+                    sunrise={sunrise}
                 />
             </ContainerBody>
             <ContainerFooter className="rodape">
                     <Footer/>
             </ContainerFooter>
-        </div>
+        </Body>
         
     )
 }

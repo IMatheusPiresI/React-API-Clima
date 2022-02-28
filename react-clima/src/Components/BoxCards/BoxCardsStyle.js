@@ -46,5 +46,6 @@ export const BoxLoading = styled.div`
 `;
 
 export const AnimationCard = styled.div`
-   
+   width: 100%;
+   height: auto;
 `;

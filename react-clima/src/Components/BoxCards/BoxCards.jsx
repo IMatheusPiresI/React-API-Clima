@@ -5,7 +5,7 @@ import ViewBsb from "../ViewBsb/ViewBsb";
 import { Container, BoxCard, BoxLoading, Loading, Cards, AnimationCard } from "./BoxCardsStyle";
 
 
-function BoxCards({forest, loading, erro, city, country, img, description, temp, humidity}){
+function BoxCards({forest, loading, erro, city, country, img, description, temp, humidity, clouds, wind, sunset, sunrise }){
 
     return(
         <Container>
@@ -25,6 +25,10 @@ function BoxCards({forest, loading, erro, city, country, img, description, temp,
                             forest={forest}
                             day={forest.dt}
                             humidity={humidity}
+                            clouds={clouds}
+                            wind={wind}
+                            sunset={sunset}
+                            sunrise={sunrise}
                         />}
                     </AnimationCard>
                 </Cards>

@@ -8,7 +8,7 @@ export const ContainerHeader = styled.header`
 export const Nav = styled.nav`
     width: 100%;
     height: 75px;
-    background-color: rgb(0,128,205);
+    background-color: rgb(0,128,205, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +17,11 @@ export const Nav = styled.nav`
 export const Image = styled.img`
     width: 45px;
     height: 45px;
+
+    @media (max-width: 1100px){
+        width: 50px;
+        height: 50px;
+    }
 `;
 
 export const BuscaCity = styled.input`
@@ -31,6 +36,22 @@ export const BuscaCity = styled.input`
     &::placeholder{
         color: #fff;
     }
+
+    @media (max-width: 1100px){
+        width: 250px;
+    }
+
+    @media (max-width: 700px){
+        width: 200px;
+    }
+
+    @media (max-width: 350px){
+        width: 50%;
+        ::-webkit-input-placeholder{
+            font-size: 10px;
+            word-wrap: break-word;
+        }
+    }
 `;
 
 export const BoxLogo = styled.div`
@@ -39,10 +60,23 @@ export const BoxLogo = styled.div`
     align-items: center;
     position: absolute;
     left: 20px;
+
+    @media (max-width: 700px){
+        left: 5px;
+    }
 `;
 
 export const NameSite = styled.h4`
     color: #FFF;
     text-shadow: 1px 1px #000;
     font-size: 25px;
+
+    @media (max-width: 1100px){
+        font-size: 22px;
+    }
+
+    @media (max-width: 700px){
+        font-size: 16px;
+        display: none;
+    }
 `;

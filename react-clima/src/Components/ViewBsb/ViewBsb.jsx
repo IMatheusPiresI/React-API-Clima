@@ -13,18 +13,26 @@ function ViewBsb(){
     const [description, setDescription] = useState('')
     const [forest, setForest] = useState([])
     const [humidityProgress, setHumidityProgress] = useState(0)
+    const [clouds, setClouds] = useState(0)
+    const [wind, setWind] = useState(0) 
+    const [sunset, setSunset] = useState(0)
+    const [sunrise, setSunrise] = useState(0)
 
     useEffect(( ) =>{
         async function wheaterBsb(){
             await apiBsb.get().then(res=>{
                 const response = res.data
+                console.log(response)
                 setCity(response.name)
                 setCountry(response.sys.country)
                 setTemp(response.main.temp.toFixed(0))
                 setImg(`http://openweathermap.org/img/wn/${response.weather[0].icon}.png`)
                 setDescription(response.weather[0].description)
-                
                 setHumidityProgress(response.main.humidity)
+                setClouds(response.clouds.all)
+                setWind(Math.floor(response.wind.speed))
+                setSunset(response.sys.sunset)
+                setSunrise(response.sys.sunrise)
                async function forestBsb(){
                     apiForest(response).get().then(res=>{
                         const forest = res.data
@@ -52,6 +60,10 @@ function ViewBsb(){
                         />
                     <InfoBsb
                         humidity={humidityProgress}
+                        clouds={clouds}
+                        wind={wind}
+                        sunset={sunset}
+                        sunrise={sunrise}
                     />
                 </BoxBsb>
                 

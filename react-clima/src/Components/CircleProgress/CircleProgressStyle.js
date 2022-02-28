@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerCard = styled.div`
-    width: 250px;
-    padding: 15px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +10,7 @@ export const ContainerCard = styled.div`
 `;
 
 export const TitleCard = styled.h3`
+    width: 200px;
     font-size: 18px;
     color: #fff;
     padding: 5px 10px;

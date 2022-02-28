@@ -9,5 +9,8 @@ export const ContainerBody = styled.main`
     background-color: rgba(100, 149, 237, .3);
 `;
 
+export const Body = styled.div`
+    flex-shrink: 0;
+`;
 
 

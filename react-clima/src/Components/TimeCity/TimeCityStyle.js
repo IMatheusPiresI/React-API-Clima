@@ -12,7 +12,7 @@ export const BoxCity = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     padding: 2em 2em 4em 2em;
     text-align: center;
 `;
