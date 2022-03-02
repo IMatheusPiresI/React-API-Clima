@@ -12,5 +12,3 @@ export const ContainerBody = styled.main`
 export const Body = styled.div`
     flex-shrink: 0;
 `;
-
-

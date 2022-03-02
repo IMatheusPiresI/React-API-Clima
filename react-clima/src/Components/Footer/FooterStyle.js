@@ -7,12 +7,18 @@ export const ContainerFooter = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0,128,205, 1);
+    background-color: rgb(0,128,205, .9);
     flex-shrink: 0;
+    box-shadow: 1px 1px 15px #0000FF;
 
     @media (max-width: 500px){
         padding: 0px 10px;
-        font-size: 10px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 360px){
+        padding: 0px 10px;
+        font-size: 12px;
     }
 `;
 

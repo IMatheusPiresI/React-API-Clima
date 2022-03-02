@@ -15,11 +15,11 @@ export const ContainerInfos = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(100, 149, 237, 0);
+    background-color: rgba(100, 149, 237, 0.2);
     border-top: 1px solid #0000FF;
     border-bottom: 1px solid #0000FF;
-
     border-radius: 15px;
+    box-shadow: 1px 1px 15px 1px #0000FF;
 `;
 
 export const InfoCity = styled.div`
