@@ -22,6 +22,11 @@ export const Image = styled.img`
         width: 50px;
         height: 50px;
     }
+
+    @media (max-width: 300px){
+        width: 35px;
+        height: 35px;
+    }
 `;
 
 export const BuscaCity = styled.input`
@@ -47,6 +52,7 @@ export const BuscaCity = styled.input`
 
     @media (max-width: 350px){
         width: 50%;
+        padding: 10px 5px;
         ::-webkit-input-placeholder{
             font-size: 10px;
             word-wrap: break-word;

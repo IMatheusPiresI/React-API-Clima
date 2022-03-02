@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerCity = styled.div`
-    width: 100%;
+    width: 97%;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -18,5 +18,6 @@ export const BoxCity = styled.div`
 `;
 
 export const ContainerTimeCity = styled.div`
-    
+    width: 100%;
+    height: 100%;
 `;

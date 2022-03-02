@@ -7,7 +7,7 @@ export const ContainerFooter = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0,128,205, 0.7);
+    background-color: rgb(0,128,205, 1);
     flex-shrink: 0;
 
     @media (max-width: 500px){

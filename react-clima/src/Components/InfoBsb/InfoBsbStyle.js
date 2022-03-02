@@ -15,8 +15,10 @@ export const ContainerInfos = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(100, 149, 237, 0.5);
-    box-shadow: 0px 0px 10px 1px #0000FF;
+    background-color: rgba(100, 149, 237, 0);
+    border-top: 1px solid #0000FF;
+    border-bottom: 1px solid #0000FF;
+
     border-radius: 15px;
 `;
 
@@ -27,7 +29,7 @@ export const InfoCity = styled.div`
     gap: 3em;
     display: flex;
    
-   @media (max-width: 1350px){
+   @media (max-width: 1400px){
     overflow-x: scroll;
 
     /* width */

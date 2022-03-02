@@ -5,7 +5,7 @@ function CircleProgress({value, title, classe, measure}){
     
     useEffect(() => {
             document.querySelector(`.${classe}`).style.strokeDashoffset = 440 - ( 440 * value) / 100
-    }, [value])
+    }, [value, classe])
 
     return(
        <ContainerCard>

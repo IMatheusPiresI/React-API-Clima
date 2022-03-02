@@ -6,7 +6,6 @@ import carregando from '../../Images/loading.gif'
 import apiForest from "../../api/apiForest";
 import apiWheaterCity from '../../api/apiWheaterCity'
 import Footer from "../../Components/Footer/Footer";
-import { ContainerFooter } from "../../Components/Footer/FooterStyle";
 
 function Home(){
 
@@ -17,8 +16,6 @@ function Home(){
     const [description, setDescription] = useState('')
     const [loading, setLoading] = useState('')
     const [temp, setTemp] = useState(0)
-    const [maxTemp, setMaxtemp] = useState(0)
-    const [minTemp, setMinTemp] = useState(0)
     const [forest, setForest] = useState([])
     const [humidity, setHumidity] = useState(0)
     const [clouds, setClouds] = useState(0)
@@ -49,8 +46,6 @@ function Home(){
                     document.querySelector('#cards').style.display = 'initial'
                     document.querySelector('#city').placeholder = 'Busque por alguma cidade...'
                     setTemp(response.main.temp.toFixed(0))
-                    setMaxtemp(response.main.temp_max.toFixed(0))
-                    setMinTemp(response.main.temp_min.toFixed(0))
                     setCity(response.name)
                     setCountry(response.sys.country)
                     setDescription(response.weather[0].description)
@@ -105,9 +100,7 @@ function Home(){
                     sunrise={sunrise}
                 />
             </ContainerBody>
-            <ContainerFooter className="rodape">
-                    <Footer/>
-            </ContainerFooter>
+            <Footer/>
         </Body>
         
     )

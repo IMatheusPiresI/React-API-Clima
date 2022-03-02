@@ -13,18 +13,27 @@ export const ContainerForest = styled.div`
 
     @media (max-width: 580px) {
         padding: 0px 30px;
-        
+        width: 90px;
+        gap: 2px;
     }
 `;
 
 export const ForestDay = styled.p`
     color: #fff;
     text-shadow: 1px 1px #000;
+
+    @media (max-width: 580px) {
+        font-size: 13px;
+    }
 `;
 
 export const ForestIcon = styled.img`
     position: relative;
     bottom: 5px;
+
+    @media (max-width: 580px) {
+        width: 40px;
+    }
 `;
 
 export const BoxTempMaxMin = styled.div`
