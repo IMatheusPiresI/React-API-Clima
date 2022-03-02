@@ -86,3 +86,10 @@ export const NameSite = styled.h4`
         display: none;
     }
 `;
+
+export const RecoverPag = styled.a`
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+`;
