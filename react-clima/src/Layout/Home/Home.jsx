@@ -61,7 +61,7 @@ function Home(){
                     }
                     forestWheater()
                 
-                    seticon(`http://openweathermap.org/img/wn/${response.weather[0].icon}.png`)
+                    seticon(`https://openweathermap.org/img/wn/${response.weather[0].icon}.png`)
                     setErro(false)
                     document.querySelector('#animationCard').classList.add('animationCard')
                     })

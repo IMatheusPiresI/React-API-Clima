@@ -26,7 +26,7 @@ function ViewBsb(){
                 setCity(response.name)
                 setCountry(response.sys.country)
                 setTemp(response.main.temp.toFixed(0))
-                setImg(`http://openweathermap.org/img/wn/${response.weather[0].icon}.png`)
+                setImg(`https://openweathermap.org/img/wn/${response.weather[0].icon}.png`)
                 setDescription(response.weather[0].description)
                 setHumidityProgress(response.main.humidity)
                 setClouds(response.clouds.all)
