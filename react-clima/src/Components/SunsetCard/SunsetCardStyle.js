@@ -5,7 +5,7 @@ export const BoxSunsetSunrise = styled.div`
     height: 175px;
     border: 3px solid #0000FF;
     border-radius: 50%;
-    background-color: rgba(161, 188, 232, .8);
+    background-color: rgba(161, 188, 232, .6);
     padding: 1em;
 `;
 
@@ -22,5 +22,5 @@ export const HourSun = styled.p`
     border: 1px solid #0000FF;
     border-radius: 25px;
     box-shadow: 0px 0px 10px 1px #0000FF;
-    text-shadow: 1px 1px #000;
+    text-shadow: 2px 2px #000;
 `;

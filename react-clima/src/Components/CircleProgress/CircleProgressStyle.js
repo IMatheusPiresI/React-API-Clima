@@ -25,7 +25,7 @@ export const TitleCard = styled.h3`
 export const BoxHumidity = styled.div`
     width: 175px;
     height: 175px;
-    background-color: rgba(161, 188, 232, .8);
+    background-color: rgba(161, 188, 232, .6);
     border: 3px solid #0000FF;
     border-radius: 100%;
     display: flex;
@@ -70,7 +70,7 @@ export const CircleOne = styled.circle`
 export const NumberProgress = styled.p`
     color: #fff;
     font-size: 20px;
-    text-shadow: 1px 1px #000 ;
+    text-shadow: 2px 2px #000 ;
 `;
 
 export const BoxNumber = styled.div`
