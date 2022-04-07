@@ -20,7 +20,7 @@ Repositório do projeto **Capital-Clima** desenvolvido com fins didáticos de ap
 
 <h3 id="preview">🎥 Preview</h3>
 
-<img src="E:\Github\React-API-Clima\react-clima\src\Images\gifReadme.gif" width="100%">
+<img src="./src/Images/gifReadme.gif" width="100%">
 
 <h3 id="inicio">🚀 Site do projeto</h3>
 
