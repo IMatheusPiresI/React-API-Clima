@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Capital-Clima  💭
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Repositório do projeto **Capital-Clima** desenvolvido com fins didáticos de aprimoramento dos conhecimentos em React-Js;
 
-## Available Scripts
+### 🎯 Menu
 
-In the project directory, you can run:
+<details>
+<summary>Clique para expandir</summary>
+◽ <a href="#inicio">Início</a> <br>
+◽ <a href="#instalacao">Acessar Projeto</a> <br>
+◽ <a href="#acessar-projeto">Instalação</a> <br>
+◽ <a href="#tecnologias">Tecnologias</a> <br>
+◽ <a href="#sobre">Sobre</a> <br>
+◽ <a href="#extras">Extras</a> <br>
+◽ <a href="#preview">Preview</a> <br>
+◽ <a href="#status">Status do Projeto</a> <br>
+◽ <a href="#autor">Autor</a> <br>
+</details>
 
-### `npm start`
+<h3 id="preview">🎥 Preview</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="E:\Github\React-API-Clima\react-clima\src\Images\gifReadme.gif" width="100%">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h3 id="inicio">🚀 Site do projeto</h3>
 
-### `npm test`
+[Visite o Site do Projeto Capital-Clima](https://capital-clima.vercel.app) 🎮
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3 id="acessar-projeto">📁 Inicialização da Clonagem</h3>
 
-### `npm run build`
+◽ <a href="https://github.com/IMatheusPiresI/React-API-Clima">Acessar</a>🔗 o código fonte pelo GitHub. <br>
+◽ Clonar o repositório ultilizando Git Bash + o comando:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+       $ git clone https://github.com/IMatheusPiresI/React-API-Filmes.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+◽ Acessar a pasta react-clima e executar o comando <br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        $ npm install
 
-### `npm run eject`
+◽ Após a instalação das dependências, rodar o comando  <br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+        $ npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3 id="instalacao">🛠️ Acessar Projeto</h3>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ao clicar em <a href="https://capital-clima.vercel.app" target="_blank">Capital-Clima</a>🔗 o site irá abrir para que possa utilizá-lo. Ele mostrará informações em tempo real sobre o clima da Cidade, estado e país que procurar, aprecie!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h3 id="tecnologias">⚙️ Tecnologias Utilizadas</h3>
 
-## Learn More
+<div style="display: inline_block">
+  <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="REACT" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h3 id="sobre">📍 Sobre</h3>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✅ Desenvolvido com React, Styled-Components, Context API, React Hooks. <br>
+✅ O projeto é uma SPA, trocando apenas o conteúdo dentro da página.<br>
+✅ Desenvolvido a componentização para poder reutilizar com funções diferentes.<br>
+✅ O algorítimo faz a checagem da busca do usuário e realiza a requisição http em 3 API's simultaneamente. <br>
+✅ A primeira API me retorna os dados locais do clima de determinada região, como temperatura, Velocidade do vento, pôr do sol e nascer do sol, etc.<br>
+✅ A segunda API me retorna a previsao do tempo, para isso eu preciso coletar os dados de geolocalização da primeira API e passar para a requisição da segunda para que ela possa retornar os dados do local pesquisado pelo usuário. <br>
+✅ A terceira API é a API que mostra ai entrar no site, a API de BSB - Brasília. Essa API é consumida de forma estática para deixar as informações da Capital, caso o usuário pesquise um local, esse componente é alterado para os dados do local procurado com uma animação.  <br>
+✅ Toda criação criada utilizando Styled-Components <br><br>
 
-### Code Splitting
+<h3 id="extras">📢 Extras</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+✅ Criei uma unica página para a plicação, onde mostrava apenas os componentes que estão as informações do clima <br>
+✅ Todo a alteração da API é feita de forma dinâmica de acordo com o valor passado pelo input pelo usuário. <br>
+✅ Trabalhei com diversas requisições a API para retornar as informações de clima <br>
+✅ Projeto responsivo. <br>
 
-### Analyzing the Bundle Size
+<h3 id="status">📌 Status do projeto</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Finalizado e recebendo feedbacks. ✔
 
-### Making a Progressive Web App
+<h3 id="autor">✒️ Autor</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<a href="https://github.com/imatheuspiresi"> <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/84977444?v=4" width="100px;" alt="Personal photo"/> </a>
 
-### Advanced Configuration
+[Clique aqui](https://matheuspires.vercel.app)🔗 e acesse meu portfólio! 💼 <br>
+Desenvolvido com ❤️ por **matheus Pires** © Alguns direitos reservados.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-pires-87a174211/) [![Github Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imatheuspiresi) [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:matheuspdsousa@gmail.com)
