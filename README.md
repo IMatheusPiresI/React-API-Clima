@@ -31,7 +31,7 @@ Repositório do projeto **Capital-Clima** desenvolvido com fins didáticos de ap
 ◽ <a href="https://github.com/IMatheusPiresI/React-API-Clima">Acessar</a>🔗 o código fonte pelo GitHub. <br>
 ◽ Clonar o repositório ultilizando Git Bash + o comando:
 
-       $ git clone https://github.com/IMatheusPiresI/React-API-Filmes.git
+       $ git clone https://github.com/IMatheusPiresI/React-API-Clima.git
 
 ◽ Acessar a pasta react-clima e executar o comando <br>
 
